@@ -17,7 +17,7 @@ public:
 	{  
 		static int nVal = 0;  
 		char szVal[20] = {0};  
-		sprintf(szVal, "help--%d", nVal);  
+		sprintf_s(szVal, "help--%d", nVal);
 		m_pfnsigDanger(szVal, nVal++);  
 	}  
 };  
